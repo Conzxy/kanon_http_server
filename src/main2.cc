@@ -55,7 +55,7 @@ int main(int argc, char* argv[])
     server.SetLoopNum(options.thread_num);
     server.StartRun();
 
-    // loop.SetEdgeTriggerMode();
+    loop.SetEdgeTriggerMode();
     loop.StartLoop();
   } else {
     ::printf("Command line parse error: %s\n", err_msg.c_str());    
